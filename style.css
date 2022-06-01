@@ -1,0 +1,41 @@
+.container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.calendar-area,
+.jurisdiction,
+.container1,
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.container1 input {
+    height: 24px;
+}
+
+.add_form_field {
+    background-color: greenyellow;
+    font-weight: 800;
+    height: 24px;
+    width: 24px;
+    margin-left: 6px;
+}
+
+.delete {
+    background-color: #ff859a;
+    font-weight: 800;
+    height: 24px;
+    width: 24px;
+    margin-left: 6px;
+}

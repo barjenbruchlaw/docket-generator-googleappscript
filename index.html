@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docket Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Docket Generator</h1>
+        <form name="forms" id="forms">
+            <div class="calendar-area">
+                <label for="docket-date">Date of docket</label> <br />
+                <input name="docket-date" type="date">
+            </div>
+            <div class="jurisdiction">
+                <label for="jurisdiction">Jurisdiction</label><br />
+                <select name="jurisdiction" id="jurisdiction">
+                    <option value="">Please select a jurisdiction</option>
+                    <option value="cass">Cass County, MO</option>
+                    <option value="clay">Clay County, MO</option>
+                    <option value="lafayette">Lafayette County, MO</option>
+                    <option value="jackson-kc">Jackson County (Kansas City), MO</option>
+                    <option value="jackson-ind">Jackson County (Independence), MO</option>
+                    <option value="platte">Platte County, MO</option>
+                </select>
+            </div>
+            <div class="container1">
+                <p>Input case numbers</p>
+                <div><input type="text" name="caseNumber[]"><button class="add_form_field">+</button></div>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Create docket folder</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
